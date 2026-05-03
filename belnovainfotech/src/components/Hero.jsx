@@ -534,19 +534,19 @@ React.useEffect(() => {
             <img src={logo} alt="BELNOVA LOGO" className="contact-logo" />
             <div className="info-item">
               <span className="icon">📍</span>
-              <p><strong>LOCATION</strong><br/>Hyderabad, Telangana, India</p>
+              <p><strong>LOCATION</strong><br />Hyderabad, Telangana, India</p>
             </div>
             <div className="info-item">
               <span className="icon">✉️</span>
-              <p><strong>EMAIL</strong><br/>hello@belnova.in</p>
+              <p><strong>EMAIL</strong><br />hello@belnova.in</p>
             </div>
             <div className="info-item">
               <span className="icon">📞</span>
-              <p><strong>PHONE</strong><br/>+91 XXXXX XXXXX</p>
+              <p><strong>PHONE</strong><br />+91 XXXXX XXXXX</p>
             </div>
             <div className="info-item">
               <span className="icon">🕒</span>
-              <p><strong>WORKING HOURS</strong><br/>Mon - Sat, 9 AM - 7 PM IST</p>
+              <p><strong>WORKING HOURS</strong><br />Mon - Sat, 9 AM - 7 PM IST</p>
             </div>
           </div>
 
