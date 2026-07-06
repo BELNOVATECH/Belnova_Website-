@@ -16,4 +16,4 @@ spec:
         - name: belnova-container
           image: ghcr.io/belnovatech/belnova-website:latest
           ports:
-            - containerPort: 3000
+            - containerPort: 80
