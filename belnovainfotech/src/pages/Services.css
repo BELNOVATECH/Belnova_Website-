@@ -788,128 +788,6 @@ footer{
 }
 
 /*=========================================================
- TABLET (992px) — merged into a single block
-=========================================================*/
-
-@media(max-width:992px){
-
-    section{
-        padding:75px 5%;
-    }
-
-    .why-grid{
-        grid-template-columns:1fr;
-    }
-
-    .timeline{
-        gap:20px;
-    }
-
-    .timeline-content{
-        padding:20px;
-    }
-
-    .tech-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .cta-box{
-        padding:55px 35px;
-    }
-}
-
-/*=========================================================
- MOBILE (768px) — merged into a single block
-=========================================================*/
-
-@media(max-width:768px){
-
-    .section-heading h2{
-        font-size:2rem;
-    }
-
-    .section-heading p{
-        font-size:.95rem;
-    }
-
-    .timeline{
-        flex-direction:column;
-        align-items:center;
-        gap:35px;
-    }
-
-    .timeline::before{
-        width:3px;
-        height:100%;
-        left:50%;
-        top:0;
-        right:auto;
-        transform:translateX(-50%);
-    }
-
-    .timeline::after{
-        width:3px;
-        height:80px;
-        left:50%;
-        top:0;
-        transform:translateX(-50%);
-        animation:mobileGlow 2s linear infinite;
-    }
-
-    @keyframes mobileGlow{
-        0%{ top:0; }
-        100%{ top:calc(100% - 80px); }
-    }
-
-    .timeline-item{
-        width:100%;
-    }
-
-    .timeline-content{
-        margin-top:22px;
-    }
-
-    .tech-grid{
-        grid-template-columns:1fr;
-    }
-
-    .tech-card{
-        padding:25px;
-    }
-
-    .cta-box{
-        padding:45px 25px;
-    }
-
-    .cta-box h2{
-        font-size:2rem;
-    }
-
-    .cta-box button{
-        width:100%;
-    }
-}
-
-/*=========================================================
- SMALL MOBILE (480px)
-=========================================================*/
-
-@media(max-width:480px){
-
-    section{
-        padding:65px 22px;
-    }
-
-    .section-heading{
-        margin-bottom:45px;
-    }
-
-    .cta-box{
-        border-radius:22px;
-    }
-}
-
-/*=========================================================
  SCROLLBAR
 =========================================================*/
 
@@ -933,3 +811,373 @@ footer{
 /*=========================
 END
 =========================*/
+
+
+
+/*=========================================================
+RESPONSIVE DESIGN
+=========================================================*/
+
+/* ---------- Large Laptop ---------- */
+@media (max-width:1400px){
+
+    section{
+        padding:80px 6%;
+    }
+
+    .services-hero-content h1{
+        font-size:3.4rem;
+    }
+
+    .cta-box{
+        padding:60px 50px;
+    }
+
+}
+
+
+/* ---------- Laptop ---------- */
+@media (max-width:1200px){
+
+    section{
+        padding:75px 5%;
+    }
+
+    .services-hero-content{
+        max-width:760px;
+    }
+
+    .services-hero-content h1{
+        font-size:3rem;
+    }
+
+    .section-heading h2{
+        font-size:2.4rem;
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .timeline{
+        gap:20px;
+    }
+
+}
+
+
+/* ---------- Tablet ---------- */
+@media (max-width:992px){
+
+    .services-page{
+        padding-top:80px;
+    }
+
+    section{
+        padding:70px 5%;
+    }
+
+    .services-hero{
+        min-height:auto;
+        padding:120px 0 80px;
+    }
+
+    .services-hero-content h1{
+        font-size:2.6rem;
+    }
+
+    .services-hero-content p{
+        font-size:1rem;
+        line-height:1.8;
+    }
+
+    .section-heading{
+        margin-bottom:45px;
+    }
+
+    .section-heading h2{
+        font-size:2.2rem;
+    }
+
+    .services-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .tech-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    /* Timeline becomes vertical */
+
+    .timeline{
+        flex-direction:column;
+        align-items:center;
+        gap:40px;
+    }
+
+    .timeline::before{
+        display:none;
+    }
+
+    .timeline-item{
+        width:100%;
+        max-width:500px;
+    }
+
+    .timeline-content{
+        margin-top:20px;
+    }
+
+    .cta-box{
+        padding:55px 35px;
+    }
+
+    .cta-box h2{
+        font-size:2.1rem;
+    }
+
+}
+
+
+/* ---------- Mobile Landscape ---------- */
+@media (max-width:768px){
+
+    section{
+        padding:60px 20px;
+    }
+
+    .services-page{
+        padding-top:70px;
+    }
+
+    .services-hero{
+        padding:100px 20px 70px;
+        min-height:auto;
+    }
+
+    .hero-tag{
+        font-size:.72rem;
+        padding:8px 18px;
+        letter-spacing:1px;
+    }
+
+    .services-hero-content h1{
+        font-size:2.2rem;
+        line-height:1.3;
+    }
+
+    .services-hero-content h1 span{
+        display:inline;
+    }
+
+    .services-hero-content p{
+        font-size:.96rem;
+        line-height:1.8;
+    }
+
+    .hero-btn{
+        padding:14px 28px;
+        font-size:.95rem;
+    }
+
+    .section-heading{
+        margin-bottom:40px;
+    }
+
+    .section-heading span{
+        font-size:.72rem;
+    }
+
+    .section-heading h2{
+        font-size:1.9rem;
+    }
+
+    .section-heading p{
+        font-size:.95rem;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .service-card{
+        padding:28px;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-card{
+        padding:28px;
+    }
+
+    .tech-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:18px;
+    }
+
+    .tech-card{
+        padding:24px 16px;
+    }
+
+    .circle{
+        width:70px;
+        height:70px;
+        font-size:18px;
+    }
+
+    .cta-section{
+        padding:60px 20px;
+    }
+
+    .cta-box{
+        padding:45px 25px;
+        border-radius:24px;
+    }
+
+    .cta-box h2{
+        font-size:1.8rem;
+    }
+
+    .cta-box p{
+        font-size:.95rem;
+        line-height:1.8;
+    }
+
+    .cta-box button{
+        width:100%;
+        justify-content:center;
+        padding:15px;
+    }
+
+}
+
+
+/* ---------- Small Mobile ---------- */
+@media (max-width:576px){
+
+    section{
+        padding:55px 18px;
+    }
+
+    .services-hero{
+        padding-top:90px;
+    }
+
+    .services-hero-content h1{
+        font-size:1.9rem;
+    }
+
+    .services-hero-content p{
+        font-size:.92rem;
+    }
+
+    .hero-btn{
+        width:100%;
+        justify-content:center;
+    }
+
+    .section-heading h2{
+        font-size:1.65rem;
+    }
+
+    .service-card{
+        padding:24px;
+    }
+
+    .service-icon{
+        width:60px;
+        height:60px;
+    }
+
+    .service-icon svg{
+        width:28px;
+        height:28px;
+    }
+
+    .why-card{
+        padding:24px;
+    }
+
+    .why-card svg{
+        width:55px;
+        height:55px;
+    }
+
+    .timeline-content{
+        padding:22px;
+    }
+
+    .tech-grid{
+        grid-template-columns:1fr;
+    }
+
+    .tech-card svg{
+        width:48px;
+        height:48px;
+    }
+
+    .cta-box h2{
+        font-size:1.55rem;
+    }
+
+}
+
+
+/* ---------- Very Small Phones ---------- */
+@media (max-width:400px){
+
+    section{
+        padding:50px 15px;
+    }
+
+    .services-page{
+        padding-top:65px;
+    }
+
+    .services-hero-content h1{
+        font-size:1.7rem;
+    }
+
+    .services-hero-content p{
+        font-size:.88rem;
+    }
+
+    .hero-btn{
+        font-size:.9rem;
+        padding:14px;
+    }
+
+    .section-heading h2{
+        font-size:1.45rem;
+    }
+
+    .section-heading p{
+        font-size:.88rem;
+    }
+
+    .service-card,
+    .why-card,
+    .timeline-content,
+    .tech-card{
+        padding:20px;
+    }
+
+    .cta-box{
+        padding:35px 20px;
+    }
+
+    .cta-box h2{
+        font-size:1.35rem;
+    }
+
+    .cta-box p{
+        font-size:.88rem;
+    }
+
+}
