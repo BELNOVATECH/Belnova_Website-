@@ -1,83 +1,262 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./footer.css";
 import logo from "../assets/BELNOVA LOGO.png";
 
 function ContactFooter() {
-    return (
-        <>
-            {/* ===== CONTACT SECTION ===== */}
-            <section id="contact" className="contact-section">
-                <div className="contact-container">
+  return (
+    <>
+{/* 
+      <section id="contact" className="bnv-contact-section">
+        <div className="bnv-contact-container">
 
-                    {/* LEFT SIDE */}
-                    <div className="contact-info">
-                        <img src={logo} alt="BELNOVA LOGO" className="contact-logo" />
+      
+          <div className="bnv-contact-left">
 
-                        <div className="info-item">
-                            <span className="icon">📍</span>
-                            <p><strong>LOCATION</strong><br />2-91/12/4/NR Plot no:4 Doc Bhavan 5th floor kondapur Hyderabad Telangana-500081 India</p>
-                        </div>
+            <img
+              src={logo}
+              alt="BELNOVA Logo"
+              className="bnv-contact-logo"
+            />
 
-                        <div className="info-item">
-                            <span className="icon">✉️</span>
-                            <p><strong>EMAIL</strong><br />info@belnovatech.com</p>
-                        </div>
+            <h2 className="bnv-contact-heading">
+              Let's Build Something Amazing Together
+            </h2>
 
-                        <div className="info-item">
-                            <span className="icon">📞</span>
-                            <p><strong>PHONE</strong><br />+91 7382405380</p>
-                        </div>
+            <p className="bnv-contact-description">
+              Have an idea, project, or business requirement?
+              Our team is ready to help you build innovative
+              digital solutions tailored to your needs.
+            </p>
 
-                        <div className="info-item">
-                            <span className="icon">🕒</span>
-                            <p><strong>WORKING HOURS</strong><br />Mon - Sat, 9 AM - 7 PM IST</p>
-                        </div>
-                    </div>
+        
+            <div className="bnv-contact-card bnv-location-card">
 
-                    {/* RIGHT SIDE */}
-                    <div className="contact-form-card">
-                        <h3 className="gradient-text-small">Get in touch!</h3>
+              <span className="bnv-card-title">
+                📍 LOCATION
+              </span>
 
-                        <form>
-                            <div className="form-row">
-                                <input type="text" placeholder="Enter Name" />
-                                <input type="text" placeholder="Enter Mobile" />
-                            </div>
+              <p className="bnv-location-text">
+                2-91/12/4/NR Plot No.4 <br />
+                Doc Bhavan, 5th Floor <br />
+                Kondapur, Hyderabad <br />
+                Telangana - 500081
+              </p>
 
-                            <input type="email" placeholder="Enter email" />
+              <a
+                href="https://maps.google.com/?q=2-91/12/4/NR+Plot+No+4+Doc+Bhavan+5th+Floor+Kondapur+Hyderabad+500081"
+                target="_blank"
+                rel="noreferrer"
+                className="bnv-map-button"
+              >
+                🗺 Open in Google Maps
+              </a>
 
-                            <textarea placeholder="Enter your query" rows="4"></textarea>
+            </div>
 
-                            <button type="submit" className="send-btn">
-                                SEND ENQUIRY
-                            </button>
-                        </form>
-                    </div>
+            <div className="bnv-contact-card">
+
+              <div className="bnv-contact-item">
+
+                <span className="bnv-contact-icon">
+                  ✉
+                </span>
+
+                <div>
+                  <h4>Email</h4>
+                  <p>info@belnovatech.com</p>
+                </div>
+
+              </div>
+
+              <div className="bnv-contact-item">
+
+                <span className="bnv-contact-icon">
+                  📞
+                </span>
+
+                <div>
+                  <h4>Phone</h4>
+                  <p>+91 7382405380</p>
+                </div>
+
+              </div>
+
+              <div className="bnv-contact-item">
+
+                <span className="bnv-contact-icon">
+                  🕒
+                </span>
+
+                <div>
+                  <h4>Working Hours</h4>
+                  <p>Mon - Sat | 9 AM - 7 PM</p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div className="bnv-contact-right">
+
+            <div className="bnv-form-card">
+
+              <h2 className="bnv-form-title">
+                Get in Touch
+              </h2>
+
+              <p className="bnv-form-subtitle">
+                Fill out the form and our team will contact you shortly.
+              </p>
+
+              <form>
+
+                <div className="bnv-form-row">
+
+                  <input
+                    type="text"
+                    className="bnv-input"
+                    placeholder="Full Name"
+                  />
+
+                  <input
+                    type="text"
+                    className="bnv-input"
+                    placeholder="Mobile Number"
+                  />
 
                 </div>
-            </section>
 
-            {/* ===== FOOTER ===== */}
-            <footer className="footer-section">
-                <div className="footer-container">
-                    <div className="footer-content">
+                <input
+                  type="email"
+                  className="bnv-input"
+                  placeholder="Email Address"
+                />
 
-                        <div className="copyright-text">
-                            © 2026 Belnova Infotech Private Limited. All rights reserved.
-                        </div>
+                <textarea
+                  rows="6"
+                  className="bnv-textarea"
+                  placeholder="Tell us about your project..."
+                ></textarea>
 
-                        <div className="social-links">
-                            <a href="https://www.linkedin.com" className="social-box" target="_blank" rel="noreferrer">in</a>
-                            <a href="https://twitter.com" className="social-box" target="_blank" rel="noreferrer">𝕏</a>
-                            <a href="https://github.com" className="social-box" target="_blank" rel="noreferrer">gh</a>
-                            <a href="https://youtube.com" className="social-box" target="_blank" rel="noreferrer">yt</a>
-                        </div>
+                <button
+                  type="submit"
+                  className="bnv-send-button"
+                >
+                  SEND ENQUIRY →
+                </button>
 
-                    </div>
-                </div>
-            </footer>
-        </>
-    );
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section> */}
+
+      {/* ================= FOOTER ================= */}
+
+      <footer className="bnv-footer">
+
+        <div className="bnv-footer-container">
+
+          <div className="bnv-footer-top">
+
+            {/* BRAND */}
+
+            <div className="bnv-footer-brand">
+
+              <img
+                src={logo}
+                alt="BELNOVA Logo"
+                className="bnv-footer-logo"
+              />
+
+              <p>
+                Building innovative software solutions,
+                AI products, cloud applications and enterprise
+                technology for businesses worldwide.
+              </p>
+
+            </div>
+
+            {/* LINKS */}
+
+<div className="bnv-footer-links">
+
+  <h3>Quick Links</h3>
+
+  <Link to="/">Home</Link>
+  <Link to="/about">About Us</Link>
+  <Link to="/services">Services</Link>
+  <Link to="/why-belnova">Why Belnova</Link>
+  <Link to="/industries">Industries</Link>
+  <Link to="/careers">Careers</Link>
+  <Link to="/contact">Contact Us</Link>
+
+</div>
+
+            {/* SOCIAL */}
+
+            <div className="bnv-footer-social">
+
+              <h3>Connect</h3>
+
+              <div className="bnv-social-icons">
+
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  in
+                </a>
+
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GH
+                </a>
+
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  X
+                </a>
+
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  ▶
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div className="bnv-footer-bottom">
+
+            © 2026 BELNOVA TECH PRIVATE LIMITED.
+            All Rights Reserved.
+
+          </div>
+
+        </div>
+
+      </footer>
+    </>
+  );
 }
 
 export default ContactFooter;
