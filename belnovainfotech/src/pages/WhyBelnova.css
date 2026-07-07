@@ -226,60 +226,285 @@ opacity:0;
     transform:translateX(-50%) translateY(-12px) scale(1.04);
 }
 
-@media(max-width:991px){
+/*==================================================
+RESPONSIVE
+==================================================*/
 
-.timeline{
-min-height:auto;
-display:flex;
-flex-direction:column;
-gap:30px;
-align-items:center;
-}
-
-.timeline-line,
-.center-core{
-display:none;
-}
-
-.feature{
-position:relative;
-left:auto;
-right:auto;
-top:auto;
-bottom:auto;
-transform:none;
-width:100%;
-max-width:450px;
-}
-
-.feature-5:hover,
-.feature:hover{
-transform:translateY(-8px);
-}
-
-.why-heading h2{
-font-size:2.3rem;
-}
-
-}
-
-@media(max-width:600px){
+/* ---------- Large Laptop ---------- */
+@media (max-width:1200px){
 
 .why-section{
-padding:80px 20px;
+    padding:100px 6%;
 }
 
-.why-heading h2{
-font-size:2rem;
+.timeline{
+    max-width:1000px;
+    min-height:850px;
 }
 
 .feature{
-padding:24px;
+    width:280px;
+}
+
+.center-core,
+.core-logo,
+.pulse{
+    width:150px;
+    height:150px;
+}
+
+.core-logo{
+    font-size:58px;
+}
+
+.why-heading h2{
+    font-size:2.8rem;
+}
+
+}
+
+
+/* ---------- Tablet ---------- */
+@media (max-width:992px){
+
+.why-section{
+    padding:90px 5%;
+}
+
+.why-heading{
+    margin-bottom:70px;
+}
+
+.why-heading h2{
+    font-size:2.4rem;
+}
+
+.timeline{
+    min-height:760px;
+}
+
+.feature{
+    width:240px;
+    padding:22px;
+}
+
+.feature h3{
+    font-size:1.2rem;
+}
+
+.feature p{
+    font-size:.92rem;
+}
+
+.center-core,
+.core-logo,
+.pulse{
+    width:130px;
+    height:130px;
+}
+
+.core-logo{
+    font-size:48px;
 }
 
 .feature-icon{
-width:60px;
-height:60px;
+    width:60px;
+    height:60px;
+}
+
+.feature-2{
+    top:90px;
+}
+
+.feature-3{
+    top:280px;
+}
+
+.feature-4{
+    top:430px;
+}
+
+}
+
+
+/* ---------- Mobile ---------- */
+@media (max-width:768px){
+
+.why-section{
+    padding:70px 20px;
+}
+
+.why-heading{
+    margin-bottom:50px;
+}
+
+.why-heading span{
+    font-size:.75rem;
+    padding:8px 18px;
+}
+
+.why-heading h2{
+    font-size:2rem;
+}
+
+.why-heading p{
+    font-size:.95rem;
+}
+
+/* Make timeline vertical */
+
+.timeline{
+    min-height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+}
+
+.timeline-line{
+    left:40px;
+    transform:none;
+}
+
+.center-core{
+    position:relative;
+    left:auto;
+    top:auto;
+    transform:none;
+    order:-1;
+    margin-bottom:20px;
+}
+
+.core-logo,
+.center-core,
+.pulse{
+    width:110px;
+    height:110px;
+}
+
+.core-logo{
+    font-size:42px;
+}
+
+.feature{
+    position:relative;
+    width:100%;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    bottom:auto !important;
+    transform:none !important;
+    padding:25px;
+}
+
+.feature:hover{
+    transform:translateY(-6px) !important;
+}
+
+.feature-5:hover{
+    transform:translateY(-6px) !important;
+}
+
+.feature-icon{
+    width:60px;
+    height:60px;
+}
+
+}
+
+
+/* ---------- Small Mobile ---------- */
+@media (max-width:576px){
+
+.why-section{
+    padding:60px 16px;
+}
+
+.why-heading h2{
+    font-size:1.75rem;
+}
+
+.why-heading p{
+    font-size:.9rem;
+}
+
+.timeline-line{
+    display:none;
+}
+
+.center-core{
+    margin-bottom:10px;
+}
+
+.core-logo,
+.center-core,
+.pulse{
+    width:90px;
+    height:90px;
+}
+
+.core-logo{
+    font-size:34px;
+}
+
+.feature{
+    padding:20px;
+    border-radius:18px;
+}
+
+.feature-icon{
+    width:55px;
+    height:55px;
+}
+
+.feature h3{
+    font-size:1.1rem;
+}
+
+.feature p{
+    font-size:.88rem;
+}
+
+.feature button{
+    font-size:.9rem;
+}
+
+}
+
+
+/* ---------- Extra Small Phones ---------- */
+@media (max-width:400px){
+
+.why-heading h2{
+    font-size:1.5rem;
+}
+
+.feature{
+    padding:18px;
+}
+
+.core-logo,
+.center-core,
+.pulse{
+    width:80px;
+    height:80px;
+}
+
+.core-logo{
+    font-size:28px;
+}
+
+.feature-icon{
+    width:50px;
+    height:50px;
+}
+
+.feature h3{
+    font-size:1rem;
+}
+
+.feature p{
+    font-size:.85rem;
 }
 
 }

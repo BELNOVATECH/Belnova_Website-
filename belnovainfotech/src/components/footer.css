@@ -1,233 +1,630 @@
-/* ================= CONTACT SECTION ================= */
+/* ==========================================================
+   BELNOVA CONTACT SECTION
+   (Unique Classes - No CSS Override)
+========================================================== */
 
-.contact-section {
+.bnv-contact-section {
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at top right, #c3a0e2 0%, #1f2750 40%, #050505 100%);
-  padding: 60px 20px;
-  display: flex;
-  justify-content: center;
-  color: white;
+  padding: 90px 20px;
+  background: linear-gradient(
+    135deg,
+    #060b1f 0%,
+    #111f48 45%,
+    #7c5db6 100%
+  );
 }
 
-.contact-section::before {
+.bnv-contact-section::before {
   content: "";
   position: absolute;
-  top: -10%;
-  right: -5%;
-  width: 1000px;
-  height: 100px;
-  background: radial-gradient(circle, rgba(168, 85, 247, 0.15), transparent 70%);
-  filter: blur(80px);
-  z-index: 0;
+  width: 520px;
+  height: 520px;
+  top: -220px;
+  right: -180px;
+  background: rgba(168, 85, 247, 0.16);
+  border-radius: 50%;
+  filter: blur(130px);
 }
 
-/* CONTAINER */
-.contact-container {
+.bnv-contact-container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
+
+  max-width: 1200px;
+  margin: auto;
+
   display: flex;
-  max-width: 1100px;
-  width: 100%;
-  gap: 60px;
   align-items: center;
+  gap: 60px;
 }
 
-/* LOGO */
-.contact-logo {
-  width: 180px;
-  margin-bottom: 40px;
-}
+/* ==========================================================
+   LEFT SIDE
+========================================================== */
 
-/* LEFT SIDE */
-.contact-info {
+.bnv-contact-left {
   flex: 1;
 }
 
-/* INFO CARDS */
-.info-item {
-  display: flex;
-  align-items: center;
+.bnv-contact-logo {
+  width: 180px;
+  border-radius: 12px;
+  margin-bottom: 28px;
+}
+
+.bnv-contact-heading {
+  font-size: 38px;
+  color: #fff;
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+
+.bnv-contact-description {
+  max-width: 460px;
+  color: rgba(255,255,255,.75);
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+/* ==========================================================
+   GLASS CARD
+========================================================== */
+
+.bnv-contact-card {
+  background: rgba(255,255,255,.08);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,.12);
+
+  border-radius: 22px;
+
+  padding: 26px;
+
+  margin-bottom: 24px;
+
+  transition: all .35s ease;
+}
+
+.bnv-contact-card:hover {
+
+  transform: translateY(-6px);
+
+  border-color: rgba(168,85,247,.45);
+
+  box-shadow: 0 18px 45px rgba(0,0,0,.35);
+
+}
+
+/* ==========================================================
+   LOCATION CARD
+========================================================== */
+
+.bnv-card-title {
+
+  display: block;
+
+  font-size: 13px;
+
+  letter-spacing: 2px;
+
+  font-weight: 700;
+
+  color: #d68fff;
+
+  margin-bottom: 16px;
+
+}
+
+.bnv-location-text {
+
+  color: #f2f2f2;
+
+  line-height: 1.8;
+
   margin-bottom: 20px;
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+
 }
 
-.info-item .icon {
-  font-size: 20px;
-  margin-right: 15px;
-}
+.bnv-map-button {
 
-.info-item p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #ccc;
-}
-
-.info-item strong {
-  background: linear-gradient(90deg, #a855f7, #ec4899);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 11px;
-  letter-spacing: 1.5px;
-}
-
-/* ================= FORM ================= */
-
-.contact-form-card {
-  flex: 1.2;
-  background: #0a0a0a;
-  padding: 40px;
-  border-radius: 24px;
-  box-shadow: 0 10px 50px rgba(0,0,0,0.5);
-  border: 1px solid rgba(168, 85, 247, 0.1);
-}
-
-.gradient-text-small {
-  background: linear-gradient(45deg, #a855f7, #ec4899);
-  -webkit-background-clip: text;
-  color: transparent;
-  margin-bottom: 20px;
-}
-
-/* INPUTS */
-.form-row {
   display: flex;
-  gap: 15px;
-}
 
-input, textarea {
-  width: 100%;
-  padding: 12px;
-  margin-top: 15px;
-  border-radius: 10px;
-  border: none;
-  background: #111;
-  color: white;
-  outline: none;
-}
-
-/* BUTTON */
-.send-btn {
-  width: 100%;
-  margin-top: 20px;
-  padding: 14px;
-  border: none;
-  border-radius: 30px;
-  background: linear-gradient(45deg, #2b3c8f, #8a3ab9);
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* ================= FOOTER ================= */
-
-.footer-section {
-  background: #050505;
-  padding: 40px 20px;
-  display: flex;
   justify-content: center;
+
+  align-items: center;
+
+  text-decoration: none;
+
+  background: linear-gradient(
+      135deg,
+      #3558ff,
+      #8b3eff
+  );
+
+  color: white;
+
+  font-weight: 600;
+
+  border-radius: 12px;
+
+  padding: 14px;
+
+  transition: .35s ease;
+
 }
 
-.footer-container {
-  max-width: 1100px;
+.bnv-map-button:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 15px 35px rgba(80,110,255,.40);
+
+}
+
+/* ==========================================================
+   CONTACT ITEMS
+========================================================== */
+
+.bnv-contact-item {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 18px;
+
+}
+
+.bnv-contact-item:not(:last-child) {
+
+  margin-bottom: 24px;
+
+}
+
+.bnv-contact-icon {
+
+  width: 52px;
+
+  height: 52px;
+
+  border-radius: 14px;
+
+  background: rgba(255,255,255,.08);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 22px;
+
+  flex-shrink: 0;
+
+}
+
+.bnv-contact-item h4 {
+
+  color: white;
+
+  margin-bottom: 6px;
+
+}
+
+.bnv-contact-item p {
+
+  color: rgba(255,255,255,.72);
+
+  line-height: 1.6;
+
+}
+
+/* ==========================================================
+   RIGHT SIDE
+========================================================== */
+
+.bnv-contact-right {
+
+  flex: 1.2;
+
+}
+
+.bnv-form-card {
+
+  background: rgba(8,8,12,.92);
+
+  border-radius: 28px;
+
+  padding: 45px;
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  backdrop-filter: blur(18px);
+
+  box-shadow: 0 25px 60px rgba(0,0,0,.45);
+
+}
+
+.bnv-form-title {
+
+  font-size: 42px;
+
+  color: white;
+
+  margin-bottom: 10px;
+
+}
+
+.bnv-form-subtitle {
+
+  color: rgba(255,255,255,.72);
+
+  margin-bottom: 34px;
+
+}
+
+/* ==========================================================
+   FORM
+========================================================== */
+
+.bnv-form-row {
+
+  display: flex;
+
+  gap: 20px;
+
+}
+
+.bnv-input,
+.bnv-textarea {
+
   width: 100%;
+
+  padding: 18px;
+
+  margin-bottom: 20px;
+
+  background: #141414;
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  border-radius: 14px;
+
+  color: white;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: .3s ease;
+
 }
 
-.footer-content {
+.bnv-input:focus,
+.bnv-textarea:focus {
+
+  border-color: #7c5cff;
+
+  box-shadow: 0 0 15px rgba(127,92,255,.35);
+
+}
+
+.bnv-textarea {
+
+  resize: none;
+
+}
+
+.bnv-send-button {
+
+  width: 100%;
+
+  border: none;
+
+  border-radius: 50px;
+
+  padding: 17px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  color: white;
+
+  background: linear-gradient(
+      135deg,
+      #365cff,
+      #9140ff
+  );
+
+  transition: .35s ease;
+
+}
+
+.bnv-send-button:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 20px 35px rgba(110,120,255,.40);
+
+}
+
+/* ==========================================================
+   BELNOVA FOOTER
+========================================================== */
+
+.bnv-footer {
+  background: #040814;
+  padding-top: 60px;
+}
+
+.bnv-footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.bnv-footer-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  gap: 50px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
 }
 
-.copyright-text {
-  font-size: 14px;
-  color: rgba(255,255,255,0.5);
+/* ==========================================
+   BRAND
+========================================== */
+
+.bnv-footer-brand {
+  flex: 1.5;
 }
 
-/* SOCIAL */
-.social-links {
+.bnv-footer-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.bnv-footer-brand p {
+  color: rgba(255,255,255,.65);
+  line-height: 1.8;
+  max-width: 400px;
+}
+
+/* ==========================================
+   QUICK LINKS
+========================================== */
+
+.bnv-footer-links,
+.bnv-footer-social {
+  flex: 1;
+}
+
+.bnv-footer-links h3,
+.bnv-footer-social h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.bnv-footer-links a {
+  display: block;
+  color: rgba(255,255,255,.65);
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: all .3s ease;
+}
+
+.bnv-footer-links a:hover {
+  color: #9d7dff;
+  transform: translateX(6px);
+}
+
+/* ==========================================
+   SOCIAL ICONS
+========================================== */
+
+.bnv-social-icons {
   display: flex;
   gap: 15px;
 }
 
-.social-box {
-  width: 42px;
-  height: 42px;
+.bnv-social-icons a {
+  width: 46px;
+  height: 46px;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 12px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.08);
-  color: rgba(255,255,255,0.7);
-  transition: 0.3s;
-}
 
-.social-box:hover {
-  background: rgba(168,85,247,0.15);
-  border-color: rgba(168,85,247,0.5);
+  border-radius: 14px;
+
+  text-decoration: none;
+
   color: white;
-  transform: translateY(-4px);
+  font-weight: bold;
+
+  background: rgba(255,255,255,.05);
+
+  transition: .35s ease;
 }
-@media (max-width: 768px) {
 
-  /* CONTAINER STACK */
-  .contact-container {
+.bnv-social-icons a:hover {
+
+  background: linear-gradient(
+      135deg,
+      #365cff,
+      #9140ff
+  );
+
+  transform: translateY(-5px);
+
+  box-shadow: 0 15px 30px rgba(110,120,255,.35);
+
+}
+
+/* ==========================================
+   FOOTER BOTTOM
+========================================== */
+
+.bnv-footer-bottom {
+
+  text-align: center;
+
+  padding: 24px 0;
+
+  color: rgba(255,255,255,.55);
+
+  font-size: 14px;
+
+}
+
+/* ==========================================================
+   TABLET RESPONSIVE
+========================================================== */
+
+@media (max-width:992px) {
+
+  .bnv-contact-container {
     flex-direction: column;
-    gap: 30px;
-    text-align: center;
   }
 
-  /* 🔥 FIX LOGO SIZE */
-  .contact-logo {
-    width: 120px;   /* ↓ reduced from 180px */
-    margin: 0 auto 20px auto;
-  }
-
-  /* INFO ITEMS CENTER */
-  .info-item {
-    justify-content: center;
-    text-align: left;
-  }
-
-  /* FORM CARD */
-  .contact-form-card {
+  .bnv-contact-left,
+  .bnv-contact-right {
     width: 100%;
-    padding: 25px;
   }
 
-  /* INPUT ROW STACK */
-  .form-row {
+  .bnv-form-card {
+    padding: 35px;
+  }
+
+  .bnv-contact-heading {
+    font-size: 30px;
+  }
+
+  .bnv-form-title {
+    font-size: 34px;
+  }
+
+  .bnv-footer-top {
     flex-direction: column;
-    gap: 10px;
+    gap: 35px;
   }
 
-  /* INPUTS */
-  input,
-  textarea {
-    font-size: 14px;
-    padding: 10px;
+}
+
+/* ==========================================================
+   MOBILE RESPONSIVE
+========================================================== */
+
+@media (max-width:768px) {
+
+  .bnv-contact-section {
+    padding: 60px 18px;
   }
 
-  /* BUTTON */
-  .send-btn {
-    padding: 12px;
-    font-size: 14px;
+  .bnv-contact-logo {
+    width: 140px;
+    margin: auto auto 25px;
+    display: block;
   }
 
-  /* FOOTER */
-  .footer-content {
-    flex-direction: column;
-    gap: 15px;
+  .bnv-contact-left {
     text-align: center;
   }
 
-  .social-links {
-    justify-content: center;
+  .bnv-contact-description {
+    margin: auto auto 30px;
   }
+
+  .bnv-form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .bnv-form-card {
+    padding: 28px;
+  }
+
+  .bnv-form-title {
+    font-size: 30px;
+  }
+
+  .bnv-contact-heading {
+    font-size: 28px;
+  }
+
+  .bnv-contact-card {
+    padding: 20px;
+  }
+
+  .bnv-contact-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bnv-contact-icon {
+    margin-bottom: 10px;
+  }
+
+  .bnv-footer {
+    text-align: center;
+  }
+
+  .bnv-footer-brand p {
+    margin: auto;
+  }
+
+  .bnv-social-icons {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .bnv-footer-links a:hover {
+    transform: none;
+  }
+
+}
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width:480px) {
+
+  .bnv-form-card {
+    padding: 22px;
+  }
+
+  .bnv-form-title {
+    font-size: 26px;
+  }
+
+  .bnv-contact-heading {
+    font-size: 24px;
+  }
+
+  .bnv-contact-logo {
+    width: 120px;
+  }
+
+  .bnv-send-button {
+    font-size: 15px;
+  }
+
+  .bnv-footer-logo {
+    width: 95px;
+  }
+
+  .bnv-footer-links h3,
+  .bnv-footer-social h3 {
+    font-size: 20px;
+  }
+
 }
